@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Mono");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono"); */
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+
+/* https://www.flaticon.com/premium-icon/now_6072901?related_id=6072901 */
+body {
+    font-family: "JetBrains Mono";
+}
+
+h3 {
+    font-family: "Kalam";
+}
+
+body{
+    background-color: darkgray;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-width: 15px !important;
+    box-sizing: border-box;
+  }
+  
+
+.scrollabletextbox {
+    height:500px;
+    width:100%;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    overflow:scroll;
+}
+
+/* Alert CSS */
+.alert-footer-mycss {
+    background-color: #121416 !important;
+    color: #ffffff !important;
+    margin: 0px !important;
+    font-family: "Kalam";
+    padding-top: 7px !important;
+    padding-bottom: 5px !important;
+}
