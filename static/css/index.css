@@ -9,49 +9,79 @@ body {
     font-family: "JetBrains Mono";
 }
 
+p {
+    text-align: left !important;
+}
+
 h3 {
-    font-family: "Kalam";
+    font-family: "Kalam" !important;
 }
 
-body{
-    background-color: darkgray;
+button {
+    font-weight: bold !important;
 }
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    border-width: 15px !important;
-    box-sizing: border-box;
-  }
-  
 
-.scrollabletextbox {
-    height:500px;
-    width:100%;
-    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 90%;
-    overflow:scroll;
+.fa-paste-corner-dark {
+    color: #212529;
+    border: none !important;
+    margin-top: 4px !important;
+    float: left !important;
+    font-size: 22px;
+    background-color: #ffffff00 !important;
 }
 
-/* Alert CSS */
-.alert-footer-mycss {
-    background-color: #121416 !important;
-    color: #ffffff !important;
-    margin: 0px !important;
-    font-family: "Kalam";
-    padding-top: 7px !important;
-    padding-bottom: 5px !important;
+/* Copy Icon CSS */
+.fa-clone-corner-light {
+    color: white;
+    background-color: #ffffff00 !important;
+    border: none !important;
+    margin-top: 4px !important;
+    float: right !important;
 }
+
+.fa-clone-corner-light:hover {
+    color: gold;
+}
+
+.fa-clone-corner-dark {
+    color: #212529;
+    background-color: #ffffff00 !important;
+    border: none !important;
+    margin-top: 4px !important;
+    float: right !important;
+}
+
+.fa-clone-corner-dark:hover {
+    color: #bf0000;
+}
+
+/* themes list css */
+#themesSearchInput {
+    border: 1px solid black !important;
+}
+
+#themesSearchInput:focus {
+    box-shadow: 0 0 10px gold;
+}
+
+.themes-list-element {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid black !important;
+}
+
+.themes-list-element:hover {
+    background-color: gold;
+}
+
 
 /* Scrollbar CSS */
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px !important;
 }
 
 /* Track */
@@ -61,11 +91,11 @@ input[type=text], select {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #212529;
+    background: grey;
     border-radius: 2px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #30363b;
+    background: rgb(184, 184, 184);
 }
