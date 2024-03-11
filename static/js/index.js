@@ -3,7 +3,7 @@ const elementHeader = document.getElementById("json-card-header");
 const DOUBLE_SLASH_SEPERATOR = "$#$DS$#$";
 const COPY_BUTTON_SUCCESS_COLOR = "green";
 const COPY_BUTTON_WAIT_TIME = 1000;
-const maxUploadFileSize = 100 * 1024 * 1024; // 100 MB in bytes
+const maxUploadFileSize = 10 * 1024 * 1024; // 100 MB in bytes
 let background_class = 'text-bg-warning';
 
 window.onload = function () {
@@ -40,7 +40,7 @@ document.getElementById('editorFileInput').addEventListener('change', function (
   // console.log("Entered editorFileInput");
   var file = event.target.files[0];
   if (file.size > maxUploadFileSize) {
-    toastMessage('Upload Limit Exceeds!', 'File size must be less than 100MB.', 'warning');
+    toastMessage('Upload Limit Exceeds!', 'File size must be less than 10MB.', 'warning');
   }
   else {
     var reader = new FileReader();
