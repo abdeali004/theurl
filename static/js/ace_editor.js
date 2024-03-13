@@ -12,6 +12,12 @@ const editor = ace.edit("editor", {
   theme: "ace/theme/github_dark",
 });
 
+function editorStartUpCode() {
+  // editor.session.setUseWrapMode(true);
+  editor.setOption("wrap", true);
+  editor.setOption("hScrollBarAlwaysVisible", false);
+
+}
 
 function setThemesDropdownList(theme) {
   let final_string = "";

@@ -7,6 +7,7 @@ const maxUploadFileSize = 10 * 1024 * 1024; // 100 MB in bytes
 let background_class = 'text-bg-warning';
 
 window.onload = function () {
+  editorStartUpCode();
   setThemesDropdownList("github_dark");
   blockViewSource();
   getShortcuts();
