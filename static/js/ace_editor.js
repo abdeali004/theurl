@@ -16,6 +16,8 @@ function editorStartUpCode() {
   // editor.session.setUseWrapMode(true);
   editor.setOption("wrap", true);
   editor.setOption("hScrollBarAlwaysVisible", false);
+  // Assuming 'editor' is your Ace Editor instance
+  editor.setKeyboardHandler("ace/keyboard/vscode");
 
 }
 
